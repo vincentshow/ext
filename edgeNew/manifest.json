@@ -1,0 +1,10 @@
+{
+  "name": "ResponseDecryptor",
+  "description": "A Basic DevTools Extension",
+  "manifest_version": 3,
+  "version": "1.0",
+  "devtools_page": "devtools.html",
+  "permissions": [
+    "storage","system.memory"
+  ]
+}
