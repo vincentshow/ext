@@ -4,25 +4,62 @@
 <head>
   <meta charset="UTF-8" />
   <script src="./crypto-js.js"></script>
+  <script src="./paperrender.js"></script>
+  <script src="./tools.js"></script>
   <script src="./panel.js"></script>
   <style>
-    ol {
+    #content {
       background-color: black;
       color: aliceblue;
     }
 
-    li {
-      list-style-type: decimal;
+    #content li {
       padding: 2px;
+    }
+
+    dl {
+      counter-reset: section;
+    }
+
+    /*伪元素:before ：在每个h1内容之中的第一个之前执行*/
+    dt:before {
+      counter-increment: section;
+      /* counter-increment：递增一个或多个计数器值*/
+      content: counter(section) ". ";
+      /* content 属性与 :before 及 :after 伪元素配合使用，来插入生成内容 */
+      font-weight: bold;
+    }
+
+    /* print styles */
+    @media print {
+
+      head,
+      #content {
+        display: none;
+      }
     }
   </style>
 </head>
 
 <body>
-  <h1>A Response Decryptor with Panel.</h1>
-  <h2><span id="signature"></span></h2>
+
+  <head>
+    <h1>A Response Decryptor with Panel.</h1>
+    <h2><span id="signature"></span></h2>
+    <hr />
+  </head>
+  <div>
+    <p>show paper here</p>
+    <dl id="paper">
+    </dl>
+  </div>
+
+  <div>
+    <p>answers here</p>
+    <ol id="answer" type="1"></ol>
+  </div>
   <hr />
-  <ol id="content">
+  <ol id="content" type="1">
     <li>Waiting stream _</li>
   </ol>
 </body>
