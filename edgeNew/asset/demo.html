@@ -1,0 +1,275 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="./crypto-js.js"></script>
+    <script src="./paperrender.js"></script>
+    <script src="./tools.js"></script>
+    <script src="./panel.js"></script>
+    <style>
+        #content {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        #content li {
+            padding: 2px;
+        }
+
+        dl {
+            counter-reset: section;
+        }
+
+        /*伪元素:before ：在每个h1内容之中的第一个之前执行*/
+        dt:before {
+            counter-increment: section;
+            /* counter-increment：递增一个或多个计数器值*/
+            content: counter(section) ". ";
+            /* content 属性与 :before 及 :after 伪元素配合使用，来插入生成内容 */
+            font-weight: bold;
+        }
+
+        /* print styles */
+        @media print {
+
+            head,
+            #content {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Paper Panel.</h1>
+    <h2><span id="signature">Tue Jul 25 2023 18:09:05 GMT+0800 (中国标准时间)</span></h2>
+    <hr>
+
+    <div>
+        <dl id="paper">
+            <dt class="subject" id="sub_460691056"><span
+                    style="color:rgb(51,51,51);font-size:16px;font-weight:700;">which of the following will NOT be
+                    included in a process model?</span>
+                <ol class="options" type="A">
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">Flow of control</span></li>
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">Data flows</span></li>
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">External agents</span></li>
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">Subject areas</span></li>
+                    <li>All</li>
+                </ol>
+            </dt>
+            <dt class="subject" id="sub_460692246"><span style="color:rgb(51,51,51);font-size:16px;font-weight:700;">All
+                    of the following techniques can be used to faclitate automated retrieval of structured and
+                    unstructured data EXCEPT</span>
+                <ol class="options" type="A">
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">classification of unstructured data in a
+                            taxonomy</span></li>
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">Social book marking (adding tags to
+                            websites)</span></li>
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">implementation of tabular design to
+                            provide easy access</span></li>
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">development of a meta-data layer to
+                            provide a common access method</span></li>
+                    <li>All</li>
+                </ol>
+            </dt>
+            <dt class="subject" id="sub_460692304"><span
+                    style="color:rgb(51,51,51);font-size:16px;font-weight:700;">Derived data is redundant because
+                    it</span>
+                <ol class="options" type="A">
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">is only calculated data</span></li>
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">is a backup for the primitive data</span>
+                    </li>
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">has the same name as primitive
+                            data</span></li>
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">is transformed primitive data</span></li>
+                    <li>All</li>
+                </ol>
+            </dt>
+            <dt class="subject" id="sub_460692760"><span
+                    style="color:rgb(51,51,51);font-size:16px;font-weight:700;">which of the following is NOT considered
+                    a possible data content defect type?</span>
+                <ol class="options" type="A">
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">Domain chaos</span></li>
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">Combining accurate data with inaccurate
+                            data</span></li>
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">Data defined with a lot of embedded
+                            meaning</span></li>
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">Duplicate occurrences</span></li>
+                    <li>All</li>
+                </ol>
+            </dt>
+            <dt class="subject" id="sub_460694587"><span style="color:rgb(51,51,51);font-size:16px;font-weight:700;">A
+                    metric for data quality accuracy is</span>
+                <ol class="options" type="A">
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">percent correct</span></li>
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">percent complete</span></li>
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">percent unique</span></li>
+                    <li><span style="color: rgb(51, 51, 51); font-size: 16px;">percent defined</span></li>
+                    <li>All</li>
+                </ol>
+            </dt>
+        </dl>
+    </div>
+    <hr>
+    <div>
+        Answer:
+        <ol id="answer" type="1">
+            <li>D</li>
+            <hr>
+            <li>B</li>
+            <hr>
+            <li>D</li>
+            <hr>
+            <li>C</li>
+            <hr>
+            <li>A</li>
+            <hr>
+        </ol>
+    </div>
+    <hr>
+    <ol id="content" type="1">
+        <li>Waiting stream _</li>
+        <li>last passphrase found in local storage is g5TrGUV8WDTNj2EgdSJRvj==</li>
+        <li>{"code":"200","data":[{"id":"460691056","uid":"4152629","paperid":"5752805","chapter":"0","difficulty":"1","difficulty_score":"0.00","parentid":"0","path":"","ptype":"4","question":"&lt;span
+            style=\"color:rgb(51,51,51);font-size:16px;font-weight:700;\"&gt;which of the following will NOT be included
+            in a process
+            model?&lt;/span&gt;","qtype":"1","type_name":"","number":"0","options":"[{\"Key\":\"A\",\"Value\":\"&lt;p&gt;&lt;span
+            style=\\\"color: rgb(51, 51, 51); font-size: 16px;\\\"&gt;Flow of
+            control&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"B\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;Data
+            flows&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"C\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;External
+            agents&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"D\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;Subject
+            areas&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"E\",\"Value\":\"&lt;p&gt;All&lt;\\/p&gt;\"}]","answer":"D","analysis":"","hash":"7ede35477f521bb1984972f5f324b2343e77c2ce","question_context_id":"","question_images":"","answer_images":"","extra":"{\"ordered\":\"0\",\"case_sensitive\":\"0\"}","status":"0","is_show":"1","editor":"","created_at":"2022-05-04
+            21:22:34","updated_at":"2022-05-04
+            21:22:34","all_right":"43","all_wrong":"39","all_accuracy":"0.5243"},{"id":"460692246","uid":"4152629","paperid":"5752805","chapter":"0","difficulty":"1","difficulty_score":"0.00","parentid":"0","path":"","ptype":"4","question":"&lt;span
+            style=\"color:rgb(51,51,51);font-size:16px;font-weight:700;\"&gt;All of the following techniques can be used
+            to faclitate automated retrieval of structured and unstructured data
+            EXCEPT&lt;/span&gt;","qtype":"1","type_name":"","number":"0","options":"[{\"Key\":\"A\",\"Value\":\"&lt;p&gt;&lt;span
+            style=\\\"color: rgb(51, 51, 51); font-size: 16px;\\\"&gt;classification of unstructured data in a
+            taxonomy&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"B\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;Social book marking (adding tags to
+            websites)&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"C\",\"Value\":\"&lt;p&gt;&lt;br&gt;&lt;\\/p&gt;&lt;p&gt;&lt;span
+            style=\\\"color: rgb(51, 51, 51); font-size: 16px;\\\"&gt;implementation of tabular design to provide easy
+            access&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"D\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;development of a meta-data layer to provide a common access
+            method&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"E\",\"Value\":\"&lt;p&gt;All&lt;\\/p&gt;\"}]","answer":"B","analysis":"","hash":"14bcb7133e998c6eea80b9c4a270f4bcf9c613b4","question_context_id":"","question_images":"","answer_images":"","extra":"{\"ordered\":\"0\",\"case_sensitive\":\"0\"}","status":"0","is_show":"1","editor":"","created_at":"2022-05-04
+            21:23:06","updated_at":"2022-05-04
+            21:23:06","all_right":"26","all_wrong":"14","all_accuracy":"0.6500"},{"id":"460692304","uid":"4152629","paperid":"5752805","chapter":"0","difficulty":"1","difficulty_score":"0.00","parentid":"0","path":"","ptype":"4","question":"&lt;span
+            style=\"color:rgb(51,51,51);font-size:16px;font-weight:700;\"&gt;Derived data is redundant because
+            it&lt;/span&gt;","qtype":"1","type_name":"","number":"0","options":"[{\"Key\":\"A\",\"Value\":\"&lt;p&gt;&lt;span
+            style=\\\"color: rgb(51, 51, 51); font-size: 16px;\\\"&gt;is only calculated
+            data&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"B\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51, 51,
+            51); font-size: 16px;\\\"&gt;is a backup for the primitive
+            data&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"C\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51, 51,
+            51); font-size: 16px;\\\"&gt;has the same name as primitive
+            data&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"D\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51, 51,
+            51); font-size: 16px;\\\"&gt;is transformed primitive
+            data&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"E\",\"Value\":\"&lt;p&gt;All&lt;\\/p&gt;\"}]","answer":"D","analysis":"","hash":"c3f3fe974960285fbda7eeb60a2bc5d52bb54ce4","question_context_id":"","question_images":"","answer_images":"","extra":"{\"ordered\":\"0\",\"case_sensitive\":\"0\"}","status":"0","is_show":"1","editor":"","created_at":"2022-05-04
+            21:23:29","updated_at":"2022-05-04
+            21:23:29","all_right":"45","all_wrong":"19","all_accuracy":"0.7031"},{"id":"460692760","uid":"4152629","paperid":"5752805","chapter":"0","difficulty":"1","difficulty_score":"0.00","parentid":"0","path":"","ptype":"4","question":"&lt;span
+            style=\"color:rgb(51,51,51);font-size:16px;font-weight:700;\"&gt;which of the following is NOT considered a
+            possible data content defect
+            type?&lt;/span&gt;","qtype":"1","type_name":"","number":"0","options":"[{\"Key\":\"A\",\"Value\":\"&lt;p&gt;&lt;span
+            style=\\\"color: rgb(51, 51, 51); font-size: 16px;\\\"&gt;Domain
+            chaos&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"B\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;Combining accurate data with inaccurate
+            data&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"C\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51, 51,
+            51); font-size: 16px;\\\"&gt;Data defined with a lot of embedded
+            meaning&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"D\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;Duplicate
+            occurrences&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"E\",\"Value\":\"&lt;p&gt;All&lt;\\/p&gt;\"}]","answer":"C","analysis":"","hash":"09d76dc6966ae0dfe9156bd5fc2da7bcaf8cc2b0","question_context_id":"","question_images":"","answer_images":"","extra":"{\"ordered\":\"0\",\"case_sensitive\":\"0\"}","status":"0","is_show":"1","editor":"","created_at":"2022-05-04
+            21:23:53","updated_at":"2022-05-04
+            21:23:53","all_right":"31","all_wrong":"25","all_accuracy":"0.5535"},{"id":"460694587","uid":"4152629","paperid":"5752805","chapter":"0","difficulty":"1","difficulty_score":"0.00","parentid":"0","path":"","ptype":"4","question":"&lt;span
+            style=\"color:rgb(51,51,51);font-size:16px;font-weight:700;\"&gt;A metric for data quality accuracy
+            is&lt;/span&gt;","qtype":"1","type_name":"","number":"0","options":"[{\"Key\":\"A\",\"Value\":\"&lt;p&gt;&lt;span
+            style=\\\"color: rgb(51, 51, 51); font-size: 16px;\\\"&gt;percent
+            correct&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"B\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;percent
+            complete&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"C\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;percent
+            unique&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"D\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;percent
+            defined&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"E\",\"Value\":\"&lt;p&gt;All&lt;\\/p&gt;\"}]","answer":"A","analysis":"","hash":"eb2a5c8a064623d39e3c76031a698376e2152d95","question_context_id":"","question_images":"","answer_images":"","extra":"{\"ordered\":\"0\",\"case_sensitive\":\"0\"}","status":"0","is_show":"1","editor":"","created_at":"2022-05-04
+            21:24:18","updated_at":"2022-05-04
+            21:24:18","all_right":"25","all_wrong":"10","all_accuracy":"0.7142"},{"id":"460696041","uid":"4152629","paperid":"5752805","chapter":"0","difficulty":"1","difficulty_score":"0.00","parentid":"0","path":"","ptype":"4","question":"&lt;span
+            style=\"color:rgb(51,51,51);font-size:16px;font-weight:700;\"&gt;Data Management goals include each of the
+            following
+            EXCEPT&lt;/span&gt;","qtype":"1","type_name":"","number":"0","options":"[{\"Key\":\"A\",\"Value\":\"&lt;p&gt;&lt;span
+            style=\\\"color: rgb(51, 51, 51); font-size: 16px;\\\"&gt;long-term
+            benefit&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"B\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;success measured by effectiveness of enterprise data
+            use&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"C\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51, 51,
+            51); font-size: 16px;\\\"&gt;success measured by the effectiveness of a single
+            application&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"D\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color:
+            rgb(51, 51, 51); font-size: 16px;\\\"&gt;application
+            independence&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"E\",\"Value\":\"&lt;p&gt;All&lt;\\/p&gt;\"}]","answer":"C","analysis":"","hash":"1dad665ca8c251165f788b841439faa5c9f6f814","question_context_id":"","question_images":"","answer_images":"","extra":"{\"ordered\":\"0\",\"case_sensitive\":\"0\"}","status":"0","is_show":"1","editor":"","created_at":"2022-05-04
+            21:24:57","updated_at":"2022-05-04
+            21:24:57","all_right":"22","all_wrong":"15","all_accuracy":"0.5945"},{"id":"460696320","uid":"4152629","paperid":"5752805","chapter":"0","difficulty":"1","difficulty_score":"0.00","parentid":"0","path":"","ptype":"4","question":"&lt;span
+            style=\"color:rgb(51,51,51);font-size:16px;font-weight:700;\"&gt;In a dimensional database model a dimension
+            table
+            contains&lt;/span&gt;","qtype":"1","type_name":"","number":"0","options":"[{\"Key\":\"A\",\"Value\":\"&lt;p&gt;&lt;span
+            style=\\\"color: rgb(51, 51, 51); font-size: 16px;\\\"&gt;units of measures for database
+            attributes&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"B\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color:
+            rgb(51, 51, 51); font-size: 16px;\\\"&gt;meta data that describes other data in the data
+            model&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"C\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;quantitative data about business
+            activities&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"D\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color:
+            rgb(51, 51, 51); font-size: 16px;\\\"&gt;descriptions of the subjects of the
+            business&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"E\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size:
+            16px;\\\"&gt;all&lt;\\/span&gt;&lt;\\/p&gt;\"}]","answer":"B","analysis":"","hash":"508cbbb829c421be3fd19d6b2d044a44da372036","question_context_id":"","question_images":"","answer_images":"","extra":"{\"ordered\":\"0\",\"case_sensitive\":\"0\"}","status":"0","is_show":"1","editor":"","created_at":"2022-05-04
+            21:26:10","updated_at":"2022-05-04
+            21:26:10","all_right":"41","all_wrong":"35","all_accuracy":"0.5394"},{"id":"460696733","uid":"4152629","paperid":"5752805","chapter":"0","difficulty":"1","difficulty_score":"0.00","parentid":"0","path":"","ptype":"4","question":"&lt;span
+            style=\"color:rgb(51,51,51);font-size:16px;font-weight:700;\"&gt;DBMS functions may include all of the
+            following
+            EXCEPT&lt;/span&gt;","qtype":"1","type_name":"","number":"0","options":"[{\"Key\":\"A\",\"Value\":\"&lt;p&gt;&lt;span
+            style=\\\"color: rgb(51, 51, 51); font-size: 16px;\\\"&gt;meta-data
+            repository&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"B\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color:
+            rgb(51, 51, 51); font-size: 16px;\\\"&gt;committing\\/aborting database
+            changes&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"C\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;data storage，retrieval，and
+            update&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"D\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;administering &amp;#39;golden&amp;#39;
+            data&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"E\",\"Value\":\"&lt;p&gt;All&lt;\\/p&gt;\"}]","answer":"D","analysis":"","hash":"e31a0477de3812d0b976ceead8c3dc3ca7428ca0","question_context_id":"","question_images":"","answer_images":"","extra":"{\"ordered\":\"0\",\"case_sensitive\":\"0\"}","status":"0","is_show":"1","editor":"","created_at":"2022-05-04
+            21:26:45","updated_at":"2022-05-04
+            21:26:45","all_right":"24","all_wrong":"12","all_accuracy":"0.6666"},{"id":"460696795","uid":"4152629","paperid":"5752805","chapter":"0","difficulty":"1","difficulty_score":"0.00","parentid":"0","path":"","ptype":"4","question":"&lt;span
+            style=\"color:rgb(51,51,51);font-size:16px;font-weight:700;\"&gt;Which of the following is NOT a design
+            artifact?&lt;/span&gt;","qtype":"1","type_name":"","number":"0","options":"[{\"Key\":\"A\",\"Value\":\"&lt;p&gt;&lt;span
+            style=\\\"color: rgb(51, 51, 51); font-size: 16px;\\\"&gt;A descriptive representation of any complex
+            object&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"B\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;A data
+            model&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"C\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;An architectural
+            representation&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"D\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color:
+            rgb(51, 51, 51); font-size: 16px;\\\"&gt;Database
+            logs&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"E\",\"Value\":\"&lt;p&gt;All&lt;\\/p&gt;\"}]","answer":"D","analysis":"","hash":"9374d9e1e84cec640695cb648f53f4f4a9845a2e","question_context_id":"","question_images":"","answer_images":"","extra":"{\"ordered\":\"0\",\"case_sensitive\":\"0\"}","status":"0","is_show":"1","editor":"4152629","created_at":"2022-05-04
+            21:27:10","updated_at":"2022-05-04
+            22:24:32","all_right":"42","all_wrong":"7","all_accuracy":"0.8571"},{"id":"460697899","uid":"4152629","paperid":"5752805","chapter":"0","difficulty":"1","difficulty_score":"0.00","parentid":"0","path":"","ptype":"4","question":"&lt;span
+            style=\"color:rgb(51,51,51);font-size:16px;font-weight:700;\"&gt;The following are critical success factors
+            for information strategy planning
+            EXCEPT&lt;/span&gt;","qtype":"1","type_name":"","number":"0","options":"[{\"Key\":\"A\",\"Value\":\"&lt;p&gt;&lt;span
+            style=\\\"color: rgb(51, 51, 51); font-size: 16px;\\\"&gt;participation of enterprise&amp;#39;s functional
+            representatives&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"B\",\"Value\":\"&lt;div class=\\\"option\\\"
+            style=\\\"margin-top: 20px; margin-bottom: 20px; line-height: 25px; color: rgb(51, 51, 51); cursor: pointer;
+            background-repeat: no-repeat; background-position: 0px center; background-size: 20px 20px; display: flex;
+            align-items: center; font-size: 16px; word-break: break-word !important;\\\"&gt;&lt;span
+            style=\\\"word-break: break-word !important;\\\"&gt;committed corporate steering
+            committee&lt;br&gt;&lt;\\/span&gt;&lt;\\/div&gt;\"},{\"Key\":\"C\",\"Value\":\"&lt;p&gt;&lt;span
+            style=\\\"color: rgb(51, 51, 51); font-size: 16px;\\\"&gt;use case
+            analysis&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"D\",\"Value\":\"&lt;p&gt;&lt;span style=\\\"color: rgb(51,
+            51, 51); font-size: 16px;\\\"&gt;structured
+            process&lt;\\/span&gt;&lt;\\/p&gt;\"},{\"Key\":\"E\",\"Value\":\"&lt;p&gt;All&lt;\\/p&gt;\"}]","answer":"C","analysis":"","hash":"70722091509ec1a86f3d9397665410ce10a50c95","question_context_id":"","question_images":"","answer_images":"","extra":"{\"ordered\":\"0\",\"case_sensitive\":\"0\"}","status":"0","is_show":"1","editor":"","created_at":"2022-05-04
+            21:27:58","updated_at":"2022-05-04
+            21:27:58","all_right":"22","all_wrong":"11","all_accuracy":"0.6666"}],"time":"1690279750","encrypt":"w9BZMrjD32pViHV3ZXdQCU=="}
+        </li>
+    </ol>
+
+
+</body>
+
+</html>
